@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>N-Queens Puzzle</h1>
+    
+    <label for="boardSize">Select Board Size:</label>
+    <select id="boardSize">
+        <option value="4">4</option>
+        <option value="8" selected>8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+    </select>
+    
+    <button id="resetButton">Generate Board</button>
+
+    <div id="chessboard"></div>
+
+    <button id="solveBacktracking">Solve with Backtracking</button>
+    <button id="solveMinConflicts">Solve with Min-Conflicts</button>
+    <button id="hintButton">Get Hint</button>
+
+    <div id="message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
